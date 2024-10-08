@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+}
+
+@layer components {
+  /*  */
+  .btn {
+    @apply rounded-md bg-gray-100 text-gray-600 text-sm px-4 py-2 hover:shadow-md hover:dark:shadow-none dark:bg-[#333] dark:text-gray-300 hover:dark:border hover:dark:border-zinc-500;
+  }
+
+  .inner-spacing {
+    @apply px-5 py-3;
+  }
+
+  .icon-link {
+    @apply w-[40px] h-[40px] rounded-full hover:bg-gray-100 inline-flex justify-center items-center transition-all hover:dark:bg-zinc-700;
+  }
+
+  /*  */
+  .search-input-bar {
+    @apply border border-gray-300 dark:border-gray-500 p-3 rounded-full w-[40vw] w-full max-w-[600px] mx-[50px] flex items-center hover:shadow-md hover:dark:bg-zinc-700 hover:dark:border-zinc-950;
+  }
+
+  .header-group {
+    @apply flex items-center text-sm;
+  }
+  .footer-group > a {
+    @apply hover-underline mx-3 text-sm;
+  }
+}
+
+@layer utilities {
+  .hover-underline:hover {
+    text-decoration: underline;
+  }
+}
